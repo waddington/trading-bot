@@ -1,3 +1,1 @@
-console.log('OOOO')
-
-export {}
+export class Kbot {}

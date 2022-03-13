@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.exports = {
+const config = {
     entry: './src/index.ts',
     output: {
         filename: 'bundle.js',
@@ -20,3 +20,9 @@ module.exports = {
     },
     devtool: 'inline-source-map',
 };
+
+
+module.exports = (env, argv) => {
+
+    return config
+}
