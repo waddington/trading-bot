@@ -7,7 +7,10 @@ const config = {
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
-        extensions: ['.ts', '.js']
+        extensions: ['.ts', '.js'],
+        alias: {
+            Kbot: path.resolve(__dirname, './../kbot/'),
+        }
     },
     module: {
         rules: [
