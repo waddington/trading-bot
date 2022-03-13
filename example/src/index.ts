@@ -1,8 +1,10 @@
-console.log("Example")
 
-import {Kbot} from '../../kbot'
+import { Kbot} from '../../kbot/src'
+import { DemoStrategy } from './Strategies'
 
-new Kbot()
+const bot = new Kbot()
+bot.addStrategy(new DemoStrategy("Demo Strategy 1"))
+
 
 export {}
 

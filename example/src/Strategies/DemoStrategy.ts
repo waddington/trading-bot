@@ -1,9 +1,8 @@
-class DemoStrategy {
-    constructor() {
-        console.log("a")
-    }
-}
+import { Strategy } from "../../../kbot/src";
 
-export {
-    DemoStrategy
+export class DemoStrategy extends Strategy {
+    constructor(name: string) {
+        super(name)
+        // console.log(`Created new Strategy: ${name}`)
+    }
 }

@@ -9,7 +9,8 @@ const config = {
     resolve: {
         extensions: ['.ts', '.js'],
         alias: {
-            Kbot: path.resolve(__dirname, './../kbot/'),
+            Kbot: path.resolve(__dirname, './../kbot/dist'),
+            kbot: path.resolve(__dirname, './../kbot/dist'),
         }
     },
     module: {
@@ -22,6 +23,7 @@ const config = {
         ]
     },
     devtool: 'inline-source-map',
+    target: 'node'
 };
 
 

@@ -19,6 +19,7 @@ const config = {
         ]
     },
     devtool: 'inline-source-map',
+    target: 'node'
 };
 
 
