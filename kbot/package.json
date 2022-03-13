@@ -28,6 +28,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
+    "axios": "^0.26.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.11.0",
     "os": "^0.1.2",

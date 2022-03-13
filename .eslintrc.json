@@ -40,6 +40,7 @@
         "wrap-iife": [
             "error",
             "any"
-        ]
+        ],
+        "no-unused-vars": "warn"
     }
 }
