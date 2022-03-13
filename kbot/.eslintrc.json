@@ -1,0 +1,45 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "constructor-super": "error",
+        "max-lines": [
+            "warn", {
+                "max": 500,
+                "skipBlankLines": true,
+                "skipComments": true
+            }
+        ],
+        "new-cap": "error",
+        "no-class-assign": "error",
+        "no-console": "warn",
+        "no-const-assign": "error",
+        "no-this-before-super": "error",
+        "no-useless-return": "error",
+        "no-var": "error",
+        "object-shorthand": "error",
+        "vars-on-top": "off",
+        "wrap-iife": [
+            "error",
+            "any"
+        ]
+    }
+}
